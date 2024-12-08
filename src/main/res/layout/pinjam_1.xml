@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- ImageView untuk Cover Buku -->
+    <ImageView
+        android:id="@+id/bookCover"
+    android:layout_width="200dp"
+    android:layout_height="250dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="16dp"
+    android:src="@drawable/cover1" />
+
+    <!-- Judul Buku -->
+    <TextView
+        android:id="@+id/bookTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="PULANG-PERGI"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:layout_marginBottom="16dp"/>
+
+    <!-- Detail Buku -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bookYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Tahun Terbit   : 2021" />
+
+        <TextView
+            android:id="@+id/bookAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Penulis            : TereLiye"
+        android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+
+    <!-- Spacer untuk mengatur jarak -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Tombol Like -->
+    <Button
+        android:id="@+id/likeButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Disukai"
+    android:layout_marginBottom="8dp"
+    android:backgroundTint="#555555"
+    android:textColor="#FFFFFF"/>
+
+    <!-- Tombol Pinjam Buku -->
+    <Button
+        android:id="@+id/borrowButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Pinjam Buku"
+    android:backgroundTint="#555555"
+    android:textColor="#FFFFFF"/>
+
+</LinearLayout>
